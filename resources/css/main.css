@@ -152,5 +152,19 @@ path.link.selected {
 
 .sidenav label{
   color: white;
+}
+
+div.form-data{
+  margin-top: 15px;
   margin-left: 25px;
+  margin-right: 10px;
+}
+
+div.form-data .right{
+  float: right;
+  width: 150px;
+}
+
+div.form-data select.right{
+  width: 154px;
 }

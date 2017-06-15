@@ -159,9 +159,9 @@
           try {
             var jsonObj = JSON.parse(txtRes);
             thisGraph.deleteGraph(true);
-            thisGraph.nodes = jsonObj.nodes;
-            thisGraph.setIdCt(jsonObj.nodes.length + 1);
-            var newEdges = jsonObj.edges;
+            thisGraph.nodes = jsonObj.graph.nodes;
+            thisGraph.setIdCt(jsonObj.graph.nodes.length + 1);
+            var newEdges = jsonObj.graph.links;
             newEdges.forEach(function(e, i) {
               newEdges[i] = {
                 source: thisGraph.nodes.filter(function(n) {

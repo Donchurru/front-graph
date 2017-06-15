@@ -158,6 +158,7 @@ var Graph = {
 		Graph.openNav();
 		var selectedNode = Graph.graph.state.selectedNode;
 		$("#node-name").val(selectedNode.title);
+		$("#node-type").val(selectedNode.metadata.type !=undefined ? selectedNode.metadata.type : selectedNode.type);
 	},
 
 	onDeselectNode : function () {
@@ -165,14 +166,14 @@ var Graph = {
 	},
 
 	openNav : function(){
-		$("#mySidenav").animate({width: 'show'}, "slow");
+		$("#mySidenav").animate({width: 'show'}, "fast");
 		//var transform = Graph.graph.d3.transform($(Graph.graph.svgG[0][0]).attr("transform"));
 		//transform.translate[0] = transform.translate[0] + 300;
 		//$(Graph.graph.svgG[0][0]).attr("transform",transform.toString());
 	},
 
 	closeNav : function(){
-		$("#mySidenav").animate({width: 'hide'}, "slow");
+		$("#mySidenav").animate({width: 'hide'}, "fast");
 		//var transform = Graph.graph.d3.transform($(Graph.graph.svgG[0][0]).attr("transform"));
 		//transform.translate[0] = transform.translate[0] - 300;
 		//$(Graph.graph.svgG[0][0]).attr("transform",transform.toString());

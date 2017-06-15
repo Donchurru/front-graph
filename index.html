@@ -12,7 +12,19 @@
   </div>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn">&times;</a>
-    <label for="node-name">Nombre: <input type="text" name="nodeName" id="node-name" value=""></label>
+    <div class="form-data">
+      <label for="node-name">Nombre: </label>
+      <input type="text" name="nodeName" id="node-name" class="right" value="">
+    </div>  
+    <div class="form-data">
+      <label for="node-type">Tipo: </label> 
+      <select name="nodeType" id="node-type" class="right">
+        <option value="Standardization">Standardization</option>
+        <option value="Validation">Validation</option>
+        <option value="SqlActor">DomainValidation</option>
+        <option value="Table">Table</option>
+      </select>
+    </div>  
     <a href="#">Services</a>
     <a href="#">Clients</a>
     <a href="#">Contact</a>
