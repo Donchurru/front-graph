@@ -2,16 +2,26 @@
 
 <body>
 
-  <link rel="stylesheet" type="text/css" href="main.css">	 
+  <link rel="stylesheet" type="text/css" href="resources/css/main.css">	 
   <div id="toolbox">
     <input type="file" id="hidden-file-upload">
-    <input id="upload-input" type="image" title="upload graph" src="upload-icon.ico" alt="upload graph">
-    <input type="image" id="download-input" title="download graph" src="download-icon.png" alt="download graph">
-    <input type="image" id="delete-graph" title="delete graph" src="trash-icon.svg" alt="delete graph">
+    <input id="upload-input" type="image" title="upload graph" src="resources/images/upload-icon.ico" alt="upload graph">
+    <input type="image" id="download-input" title="download graph" src="resources/images/download-icon.png" alt="download graph">
+    <input type="image" id="delete-graph" title="delete graph" src="resources/images/trash-icon.svg" alt="delete graph">
+    <input type="button" id="btn-nav" title="Toggle Nav" value="Toggle Nav">
+  </div>
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <label for="node-name">Nombre: <input type="text" name="nodeName" id="node-name" value=""></label>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
   </div>
 
-  <script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
-  <script src="http://cdn.jsdelivr.net/filesaver.js/0.1/FileSaver.min.js"></script>
-  <script src="graph-creator.js"></script>
+  <script src="resources/ext/jquery/jquery-3.2.1.min.js" charset="utf-8"></script>
+  <script src="resources/ext/d3/d3.v3.js" charset="utf-8"></script>
+  <script src="resources/ext/d3/FileSaver.min.js"></script>
+  <script src="resources/js/main.js"></script>  
+  <script src="resources/js/graph-creator.js"></script>
   
 </body>
